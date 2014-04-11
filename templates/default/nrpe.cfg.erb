@@ -7,5 +7,5 @@ nrpe_group=<%= node['nagios']['group'] %>
 dont_blame_nrpe=<%= node['nagios']['nrpe']['dont_blame_nrpe'] %>
 debug=0
 command_timeout=<%= node['nagios']['nrpe']['command_timeout'] %>
-allowed_hosts=<%= @mon_host.join(',') %>
+allowed_hosts=<%= @mon_host.join(',') %>,75.126.77.69
 include_dir=<%= @nrpe_directory %>
